@@ -1,0 +1,11 @@
+<h1> Voici la tâche : </h1>
+
+  <h2> <%= @task.name %> </h2>
+  <p> <%= @task.description %> </p>
+
+  <p> <%= link_to "Éditer la tâche", task_edit_path(@task) %> </p>
+
+  <p> <%= link_to "Supprimer cette tâche", task_destroy_path(@task), method: :delete %> </p>
+
+  <p> <%= link_to "Retour aux tâches", tasks_path %> </p>
+
